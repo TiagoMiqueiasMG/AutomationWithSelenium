@@ -1,8 +1,8 @@
 # Base2 - Test Automation / Automação de Testes Base2
 
-This repository contains automated tests developed for Base2. The goal of these tests is to validate the user registration functionality in a user management system by performing the login process, verifying user data on the web interface, and subsequently creating tasks through the system.
+This repository contains automated tests developed for Base2. The goal of these tests is to validate the user registration functionality in a user management system by performing the login process, verifying user data on the web interface, and subsequently creating tasks through the system by filling out the task creation form.
 
-Este repositório contém testes automatizados desenvolvidos para a Base2. O objetivo desses testes é validar a funcionalidade de registro de usuário em um sistema de gerenciamento de usuários, realizando o processo de login, verificando os dados do usuário na interface web e, posteriormente, criando tarefas no sistema.
+Este repositório contém testes automatizados desenvolvidos para a Base2. O objetivo desses testes é validar a funcionalidade de registro de usuário em um sistema de gerenciamento de usuários, realizando o processo de login, verificando os dados do usuário na interface web e, posteriormente, criando tarefas no sistema ao preencher o formulário de criação de tarefa.
 
 ## Pre requisites / Pré-requisitos
 
@@ -79,48 +79,39 @@ Este projeto utiliza as seguintes dependências:
 
 ## Project Structure / Estrutura do Projeto
 
-- **src/test/java/br/com/mantis/provabase/signup**: Contains the test class `SignUpTests`, which performs the login process and verifies the presence of the user name on the interface.
+- **src/test/java/br/com/mantis/provabase/signup**: Contains the test class `SignUpTests`, which performs the login process, verifies the presence of the user name on the interface, and then creates tasks by filling out the task creation form.
   
   - **SignUpTests.java**: Test that validates the registration of a new user with valid data.
+  - **CreateTaskTests.java**: Handles the task creation process after successful login.
 
   - **SignUpTests.java**: Teste que valida o registro de um novo usuário com dados válidos.
+  - **CreateTaskTests.java**: Responsável pelo processo de criação de tarefas após o login bem-sucedido.
 
 ## Test Description / Descrição do Teste
 
-The test simulates the process of registering a new user by performing the following steps:
+The test simulates the process of registering a new user and then creating a task by performing the following steps:
 
-O teste simula o processo de registro de um novo usuário, realizando os seguintes passos:
+O teste simula o processo de registro de um novo usuário e depois a criação de uma tarefa, realizando os seguintes passos:
 
 1. **Open the system**: Access the login system of the Base2 application through the configured browser.
 2. **Fill in the login fields**: Enter the username and password in the respective fields.
 3. **Validate user name**: After logging in, the user name is verified on the interface to ensure successful login.
-4. **Close the browser**: After the test execution, the browser is closed.
+4. **Create Task**: After successful login, navigate to the "Create Task" section, fill out the task creation form, and submit it.
+5. **Close the browser**: After the test execution, the browser is closed.
 
 1. **Abrir o sistema**: O sistema de login da aplicação Base2 é acessado através do navegador configurado.
 2. **Preencher os campos de login**: O nome de usuário e a senha são inseridos nos campos correspondentes.
 3. **Validar o nome do usuário**: Após o login, o nome do usuário é verificado na interface para garantir que o login foi realizado corretamente.
-4. **Fechar o navegador**: Após a execução do teste, o navegador é fechado.
+4. **Criar Tarefa**: Após o login bem-sucedido, navegue até a seção "Criar Tarefa", preencha o formulário de criação de tarefa e envie-o.
+5. **Fechar o navegador**: Após a execução do teste, o navegador é fechado.
 
-## Contributions / Contribuições
-
-Feel free to contribute to the project. To do so, follow these steps:
-
-Sinta-se à vontade para contribuir com o projeto. Para isso, siga os seguintes passos:
-
-1. Fork this repository.
-2. Create a new branch for your feature (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the remote repository (`git push origin feature/new-feature`).
-5. Open a Pull Request.
-
-1. Faça um fork deste repositório.
-2. Crie uma branch com a sua feature (`git checkout -b feature/nova-feature`).
-3. Commit suas alterações (`git commit -m 'Add some feature'`).
-4. Envie para o repositório remoto (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
 
 ## License / Licença
 
 This project is licensed under the [MIT License](LICENSE).
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+---
+
+Let me know if any further adjustments are needed!
