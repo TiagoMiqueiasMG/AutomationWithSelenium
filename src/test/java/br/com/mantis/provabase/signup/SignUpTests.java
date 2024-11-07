@@ -45,7 +45,8 @@ public class SignUpTests {
         navegador.findElement(By.cssSelector("input[value='Entrar']")).click();
 
         //Vou digitar a senha no input id password
-        navegador.findElement(By.id("password")).sendKeys("Tmiq!2024");
+        //Inserir senha em sendKeys
+        navegador.findElement(By.id("password")).sendKeys("*******");
         //Clicar no botão entrar
         navegador.findElement(By.cssSelector("input[value='Entrar']")).click();
 
@@ -53,11 +54,9 @@ public class SignUpTests {
         String greeting = navegador.findElement(By.className("user-info")).getText();
         Assertions.assertEquals("Tiago_Rodrigues",greeting);
 
-
         // Chamar a criação da tarefa (Task Form)
         TaskForm createTaskTests = new TaskForm(navegador);
         createTaskTests.createTask();
-
 
         //Fechar o navegador
         navegador.quit();
