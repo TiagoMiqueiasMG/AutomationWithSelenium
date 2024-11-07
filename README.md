@@ -39,13 +39,11 @@ Este projeto utiliza as seguintes dependências:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/base2-test.git
-   cd base2-test
+   git clone https://github.com/TiagoMiqueiasMG/TestBase2.git
    ```
 
    ```bash
-   git clone https://github.com/seu-usuario/base2-test.git
-   cd base2-test
+   git clone https://github.com/TiagoMiqueiasMG/TestBase2.git
    ```
 
 2. **Compile and run the tests** with Maven:
@@ -68,10 +66,15 @@ Este projeto utiliza as seguintes dependências:
    Exemplo de configuração da variável `navegador`:
 
    ```java
-   public static String navegador = "chrome";  // Or "firefox"
+   public static String navegador = "chrome";  
+   ```
+   ou
+   
+    ```java
+   public static String navegador = "firefox";  
    ```
 
-4. **Test Results**:
+5. **Test Results**:
 
    After running the tests, you will see the results in the console, indicating whether the tests passed or failed.
 
