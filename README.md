@@ -4,7 +4,7 @@ This repository contains automated tests developed for **Base2**. The goal of th
 
 Este repositório contém testes automatizados desenvolvidos para a **Base2**. O objetivo desses testes é validar a funcionalidade de **registro de usuário** em um sistema de gerenciamento de usuários, realizando o processo de login e verificando os dados do usuário na interface web.
 
-## Prerequisites / Pré-requisitos
+## Pre requisites / Pré-requisitos
 
 To run the tests, the following tools are required:
 
