@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -18,11 +20,25 @@ import java.time.Duration;
 public class SignUpTests {
     @Test
     @DisplayName("Registrar um novo usuário com Dados Válidos")
+
+
     public void testRegisterNewUserWithValidData(){
 
-        //Abrir o navegador Chrome
-        WebDriverManager.chromedriver().setup();
-        WebDriver navegador = new ChromeDriver();
+        String browser = "chrome";
+        WebDriver navegador;
+
+        if (browser.equals("chrome")) {
+            // Abrir o navegador Chrome
+            WebDriverManager.chromedriver().setup();
+            navegador = new ChromeDriver();
+        } else if (browser.equals("firefox")) {
+            //Abrir o navegador Firefox
+            WebDriverManager.firefoxdriver().setup();
+            navegador = new FirefoxDriver();
+        } else {
+            throw new IllegalArgumentException("Navegador não suportado: " + browser);
+        }
+
         navegador.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 
         //Abrir o sistema mantis
@@ -42,6 +58,7 @@ public class SignUpTests {
         String greeting = navegador.findElement(By.className("user-info")).getText();
         Assertions.assertEquals("Tiago_Rodrigues",greeting);
 
+        //Fechar o navegador
         navegador.quit();
     }
 }
