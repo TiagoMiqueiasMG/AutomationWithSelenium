@@ -9,10 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-
 import java.time.Duration;
 
 @DisplayName("Testes da Funcionalidade SignUp")
@@ -39,7 +35,7 @@ public class SignUpTests {
             throw new IllegalArgumentException("Navegador não suportado: " + browser);
         }
 
-        navegador.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        navegador.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //Abrir o sistema mantis
         navegador.get("https://mantis-prova.base2.com.br/");
@@ -59,6 +55,6 @@ public class SignUpTests {
         Assertions.assertEquals("Tiago_Rodrigues",greeting);
 
         //Fechar o navegador
-        navegador.quit();
+        //navegador.quit();
     }
 }
