@@ -1,8 +1,8 @@
 # Base2 - Test Automation / Automação de Testes Base2
 
-This repository contains automated tests developed for **Base2**. The goal of these tests is to validate the **user registration** functionality in a user management system by performing the login process and verifying user data on the web interface.
+This repository contains automated tests developed for Base2. The goal of these tests is to validate the user registration functionality in a user management system by performing the login process, verifying user data on the web interface, and subsequently creating tasks through the system.
 
-Este repositório contém testes automatizados desenvolvidos para a **Base2**. O objetivo desses testes é validar a funcionalidade de **registro de usuário** em um sistema de gerenciamento de usuários, realizando o processo de login e verificando os dados do usuário na interface web.
+Este repositório contém testes automatizados desenvolvidos para a Base2. O objetivo desses testes é validar a funcionalidade de registro de usuário em um sistema de gerenciamento de usuários, realizando o processo de login, verificando os dados do usuário na interface web e, posteriormente, criando tarefas no sistema.
 
 ## Pre requisites / Pré-requisitos
 
