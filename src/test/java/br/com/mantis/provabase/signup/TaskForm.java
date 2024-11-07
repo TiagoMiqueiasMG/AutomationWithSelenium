@@ -1,5 +1,4 @@
 package br.com.mantis.provabase.signup;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,11 +28,11 @@ public class TaskForm {
 
         // Preencher "Resumo"
         WebElement resumo = navegador.findElement(By.id("summary"));
-        resumo.sendKeys("Segunda Tarefa de Teste");
+        resumo.sendKeys("Quarta Tarefa de Teste");
 
         // Preencher "Descrição"
         WebElement descricao = navegador.findElement(By.id("description"));
-        descricao.sendKeys("Segunda Tarefa criada com finalidade de testar a aplicação de teste");
+        descricao.sendKeys("Quarta Tarefa criada com finalidade de testar a aplicação de teste");
 
         // Clicar no botão "Criar Nova Tarefa"
         navegador.findElement(By.cssSelector("input[value='Criar Nova Tarefa']")).click();

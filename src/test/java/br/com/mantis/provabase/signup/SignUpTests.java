@@ -1,7 +1,6 @@
 package br.com.mantis.provabase.signup;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -54,7 +53,13 @@ public class SignUpTests {
         String greeting = navegador.findElement(By.className("user-info")).getText();
         Assertions.assertEquals("Tiago_Rodrigues",greeting);
 
+
+        // Chamar a criação da tarefa (Task Form)
+        TaskForm createTaskTests = new TaskForm(navegador);
+        createTaskTests.createTask();
+
+
         //Fechar o navegador
-        //navegador.quit();
+        navegador.quit();
     }
 }
