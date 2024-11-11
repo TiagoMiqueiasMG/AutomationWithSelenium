@@ -1,4 +1,4 @@
-# Base2 - Test Automation / Automação de Testes Base2
+# Selenium WebDriver- Test Automation / Automação de Testes com Selenium WebDriver
 
 This repository contains automated tests developed with Selenium WebDriver The goal of these tests is to validate the user registration functionality in a user management system by performing the login process, verifying user data on the web interface, and subsequently creating tasks through the system by filling out the task creation form.
 
@@ -39,11 +39,11 @@ Este projeto utiliza as seguintes dependências:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/TiagoMiqueiasMG/TestBase2.git
+     git clone https://github.com/TiagoMiqueiasMG/AutomationWithSelenium.git
    ```
 
    ```bash
-   git clone https://github.com/TiagoMiqueiasMG/TestBase2.git
+   git clone https://github.com/TiagoMiqueiasMG/AutomationWithSelenium.git
    ```
 
 2. **Compile and run the tests** with Maven:
