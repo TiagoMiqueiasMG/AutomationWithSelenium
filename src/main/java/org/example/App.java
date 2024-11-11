@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Bem-vindo(a) ao meu projeto de testes para a Base2." );
+        System.out.println( "Bem-vindo(a) ao meu projeto de testes com Selenium WebDriver." );
     }
 }
